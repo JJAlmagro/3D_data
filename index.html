@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Assignment 5: 3D Visualisation</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimum-scale=1"/>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
@@ -94,6 +94,11 @@
         #results {
             margin-top: 1200px;
         }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto 
+        }
     </style>
 </head>
 <body>
@@ -110,7 +115,7 @@
     <div id="Protein-Visualisation">
         <h2>Protein Visualisation</h2>
                 <p>
-For structural protein analysis, 3D visualization is useful to get an overview of the tertiary stucture of the protein. The visualization gives the user the opportunity to better understand the protein's activity, and to identify any particular domains of interest such as catalityc or regulatory regions which can be used as a active site in pharmaceutical therapies.
+For structural protein analysis, 3D visualization is useful to get an overview of the tertiary stucture of the protein. The visualization gives the user the opportunity to better understand the protein's activity, and to identify any particular domains of interest such as catalityc or regulatory regions which can be used as a active site in pharmaceutical therapies. By clicking the image bellow, you will be able to view the visualisation.
 </p>
 
 
@@ -121,14 +126,14 @@ For this particular visualization we have used various features to aid the under
 view the atoms and bonds and give some depth, and size of the molecule. Antother feautre that could have been used was lighting of the scene to again give some depth, and shading of the atoms and bonds. Instead of doing this, an image of a ball was used for each atom, which already depicted some shading. This gives the impression that each atom has a third dimension, and that there is a light source present. In order to navigate the molecule, controls were added, which allowed rotation and translation of the image, as well as movement of the camera position. These were added as a "trackball" feature, so the image could rotate 360 degrees with free movement.
 </p>
 
-<p>Colouring of different atoms in the protein was also added, which allows further uderstanding of the structure and possible behaviour of the protein itself. The color of an atom depends on its element: C=gray, N=blue, O=red, S=yellow. No Hydrogens were added as this would have been extremley cluttered on such a large molecule. By clicking the image above, you will be able to view the visualisation.  </p>
+<p>Colouring of different atoms in the protein was also added, which allows further uderstanding of the structure and possible behaviour of the protein itself. The color of an atom depends on its element: C=gray, N=blue, O=red, S=yellow. No Hydrogens were added as this would have been extremley cluttered on such a large molecule.  </p>
 
 
     </div>
     <div id="MRI-Visualisation">
         <h2>MRI Visualisation</h2>
         <p>
-            For the second visualization, brain MR images were put on panels to create a 3D scene. A potential use of this visualization will be the medical field, as the user can be able to select and “play” with the brain slices. This tool helps identify a potential explanation for an illness or even an early diagnosis of a neurological illness. 
+            For the second visualization, brain MR images were put on panels to create a 3D scene. A potential use of this visualization will be the medical field, as the user can be able to select and “play” with the brain slices. This tool helps identify a potential explanation for an illness or even an early diagnosis of a neurological illness. By clicking the image bellow, you will be able to view the visualisation.
 
         </p>
         <a href="brain.html"><img src="brain_image.jpg" alt="Still of MRI visualisation tool" style="width:550px;height:350px;" align="middle"></a>
