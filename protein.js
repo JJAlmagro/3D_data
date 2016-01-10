@@ -49,11 +49,11 @@ function init() {
 
     baseSprite.onload = function () {
 
-        loadMolecule( "three_all/examples/models/molecules/2RH1.pdb" );
+        loadMolecule( "2RH1.pdb" );
 
     };
 
-    baseSprite.src = 'three_all/examples/textures/sprites/ball.png';
+    baseSprite.src = 'ball.png';
 
     //
 
