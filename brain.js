@@ -59,13 +59,13 @@ var slice = new function(){
     this.Sagittal = 128;
     this.Axial = 128;
     this.Coronal = 128;
-
+    this.Reset = function (){return this.Sagittal = 128, this.Axial = 128,this.Coronal = 128, camera.position.z = 500}
 };
 
-gui.add(slice, 'Sagittal',1,256).step(1);
-gui.add(slice, 'Axial',1,256).step(1);
-gui.add(slice, 'Coronal',1,256).step(1);
-
+gui.add(slice, 'Sagittal',1,256).step(1).listen();
+gui.add(slice, 'Axial',1,256).step(1).listen();
+gui.add(slice, 'Coronal',1,256).step(1).listen();
+gui.add(slice, 'Reset');
 
 planeGroup = new THREE.Object3D;
 var geometry = new THREE.PlaneGeometry( 256, 256);
@@ -111,11 +111,8 @@ var render = function () {
     plane2.position.y = slice.Axial-128;
     plane3.position.x = slice.Sagittal-128;
     plane1.material.map = coronal[slice.Coronal-1];
-    plane1.material.needsUpdate = true;
     plane2.material.map = axial[slice.Axial-1];
-    plane2.material.needsUpdate = true;
     plane3.material.map = sagittal[slice.Sagittal-1];
-    plane3.material.needsUpdate = true;
 
 
     function animate() {

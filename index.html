@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Assignment 5: 3D data</title>
+    <title>Assignment 5: 3D Visualisation</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
@@ -9,7 +9,7 @@
     <style>
         #header {
             font-family: Helvetica;
-            background-color:rgb(25,25,112);
+            background-color:rgb(38, 38, 38);
             color:white;
             text-align:center;
             padding:5px;
@@ -27,7 +27,6 @@
             float:left;
             padding:5px;
         }
-
         #section {
             font-family: Helvetica;
             width:80%;
@@ -37,7 +36,6 @@
             margin-right: 5%;
             background-color: white;
             text-align: justify;
-
         }
         #layer_selector ul {
             padding: 0; margin: 0;
@@ -58,7 +56,6 @@
         #layer_selector li.selected {
             background-color: #EEE;
         }
-
         .myButton {
             -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
             -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -101,34 +98,46 @@
 </head>
 <body>
 <div id="header">
-    <h1>Assignment 5: 3D data</h1>
+    <h1>Assignment 5: 3D Data Visualisation</h1>
     <h3>Jose Juan Almagro Armenteros, Joseph Blair & Juan Salamanca Viloria</h3>
 </div>
 <div id="nav" >
-    <a href = "#introduction" class="myButton">Introduction</a>
-    <a href = "#instructions" class="myButton">Instructions</a>
-    <a href = "#discussion" class="myButton">Discussion</a>
+    <a href = "#Protein-Visualisation" class="myButton">Protein Vis</a>
+    <a href = "#MRI-Visualisation" class="myButton">MRI Vis</a>
 
 </div>
 <div id="section">
-    <div id="introduction">
-        <h2>Introduction</h2>
-    </div>
-    <div id="instructions">
-        <h2>Instructions</h2>
-    </div>
-    <div id="discussion">
-        <h2>Discussion</h2>
-        <li>
-            <a href="protein.html">2RH1 protein visualization</a>
-        </li>
-        <li>
-            <a href="brain.html">Brain MR image</a>
-        </li>
+    <div id="Protein-Visualisation">
+        <h2>Protein Visualisation</h2>
+                <p>
+For structural protein analysis, 3D visualization is useful to get an overview of the tertiary stucture of the protein. The visualization gives the user the opportunity to better understand the protein's activity, and to identify any particular domains of interest such as catalityc or regulatory regions which can be used as a active site in pharmaceutical therapies.
+</p>
 
-        </div>
-        <div id="results">
-        </div>
+
+        <a href="protein.html">    <img src="Protein_image.jpg" alt="Still of 2RH1 3D visual" style="width:550px;height:350px;" align="middle"></a>
+      <p>
+
+For this particular visualization we have used various features to aid the understanding of the protein structure. For instance a "perspective camera" was used to 
+view the atoms and bonds and give some depth, and size of the molecule. Antother feautre that could have been used was lighting of the scene to again give some depth, and shading of the atoms and bonds. Instead of doing this, an image of a ball was used for each atom, which already depicted some shading. This gives the impression that each atom has a third dimension, and that there is a light source present. In order to navigate the molecule, controls were added, which allowed rotation and translation of the image, as well as movement of the camera position. These were added as a "trackball" feature, so the image could rotate 360 degrees with free movement.
+</p>
+
+<p>Colouring of different atoms in the protein was also added, which allows further uderstanding of the structure and possible behaviour of the protein itself. The color of an atom depends on its element: C=gray, N=blue, O=red, S=yellow. No Hydrogens were added as this would have been extremley cluttered on such a large molecule. By clicking the image above, you will be able to view the visualisation.  </p>
+
+
+    </div>
+    <div id="MRI-Visualisation">
+        <h2>MRI Visualisation</h2>
+        <p>
+            For the second visualization, brain MR images were put on panels to create a 3D scene. A potential use of this visualization will be the medical field, as the user can be able to select and “play” with the brain slices. This tool helps identify a potential explanation for an illness or even an early diagnosis of a neurological illness. 
+
+        </p>
+        <a href="brain.html"><img src="brain_image.jpg" alt="Still of MRI visualisation tool" style="width:550px;height:350px;" align="middle"></a>
+
+        <p>
+        Controls were added to manipulate the visualization and allow rotation and change of camera position. This was enable using "orbit controls" to allow camera movement and navigation of the images, without ever turning the brain upsidwdown. Furthermore we added a GUI to allow the viewing of different slices of the image in coronal, axial and sagittal directions.
+        Other features as the light and material were added to allowed easy analysis of the medical image and improve its definition. The material chosen was matt to avoid too much reflection of light, which may have distorted the image. Point lights was added in three directions to ensure visibility of the imagesat all angles.
+</p>
+
     </div>
 
 
