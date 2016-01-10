@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 4: San Francisco Crimes</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <style>
+        #header {
+            font-family: Helvetica;
+            background-color:rgb(25,25,112);
+            color:white;
+            text-align:center;
+            padding:5px;
+            height: 150px;
+            width: 100%
+        position: absolute;
+        }
+        #nav {
+            font-family: Helvetica;
+            position: fixed;
+            line-height:30px;
+            background-color: white;
+            height:150px;
+            width:100px;
+            float:left;
+            padding:5px;
+        }
+
+        #section {
+            font-family: Helvetica;
+            width:80%;
+            float:left;
+            padding:10px;
+            margin-left: 12%;
+            margin-right: 5%;
+            background-color: white;
+            text-align: justify;
+
+        }
+        #layer_selector ul {
+            padding: 0; margin: 0;
+            list-style-type: none;
+        }
+        #layer_selector li {
+            border-bottom: 1px solid #999;
+            padding: 15px 30px;
+            font-family: "Helvetica", Arial;
+            font-size: 13px;
+            color: #444;
+            cursor: auto;
+        }
+        #layer_selector li:hover {
+            background-color: #F0F0F0;
+            cursor: pointer;
+        }
+        #layer_selector li.selected {
+            background-color: #EEE;
+        }
+
+        .myButton {
+            -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            box-shadow:inset 0px 1px 0px 0px #ffffff;
+            background-color:transparent;
+            -moz-border-radius:6px;
+            -webkit-border-radius:6px;
+            border-radius:6px;
+            border:1px solid #dcdcdc;
+            display:inline-block;
+            cursor:pointer;
+            color:#666666;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #ffffff;
+            width: 90%;
+        }
+        .myButton:hover {
+            background-color:transparent;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+        path {
+            stroke: steelblue;
+            stroke-width: 2;
+            fill: none;
+        }
+        .selected {
+            fill: orange;
+        }
+        #results {
+            margin-top: 1200px;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <h1>Assignment 5: 3D data</h1>
+    <h3>Jose Juan Almagro Armenteros, Joseph Blair & Juan Salamanca Viloria</h3>
+</div>
+<div id="nav" >
+    <a href = "#introduction" class="myButton">Introduction</a>
+    <a href = "#instructions" class="myButton">Instructions</a>
+    <a href = "#discussion" class="myButton">Discussion</a>
+
+</div>
+<div id="section">
+    <div id="introduction">
+        <h2>Introduction</h2>
+    </div>
+    <div id="instructions">
+        <h2>Instructions</h2>
+    </div>
+    <div id="discussion">
+        <h2>Discussion</h2>
+        <li>
+            <a href="protein.html">2RH1 protein visualization</a>
+        </li>
+        <li>
+            <a href="brain.html">Brain MR image</a>
+        </li>
+
+        </div>
+        <div id="results">
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
